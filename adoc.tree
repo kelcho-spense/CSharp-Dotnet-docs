@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="adoc"
+                 name="API Docs"
+                 start-page="Introduction & Environment Setup.md">
+
+    <toc-element topic="SQL-Server.md"/>
+    <toc-element topic="Introduction & Environment Setup.md">
+        <toc-element topic="Introduction to C# Programming Language.md"/>
+        <toc-element topic="How to Download and Install Visual Studio on Windows.md"/>
+        <toc-element topic="Creating-First-Console-Application-using-Visual-Studio.md"/>
+    </toc-element>
+    <toc-element topic="C-NET-Basics.md">
+        <toc-element topic="Methods-and-Properties-of-Console-Class-in-C.md"/>
+        <toc-element topic="Var-Keyword-in-C.md"/>
+        <toc-element topic="Const-Keyword-in-C.md"/>
+        <toc-element topic="Data-Types-in-C.md">
+            <toc-element topic="Value-Data-Types-in-C.md">
+                <toc-element topic="Predefined-Data-types.md">
+                    <toc-element topic="Numeric-Numbers-with-Decimal-Single-Double-Decimal.md"/>
+                    <toc-element topic="Integers-Data-types.md"/>
+                    <toc-element topic="char-data-type-in-C.md"/>
+                    <toc-element topic="Byte-Data-Type-in-C.md">
+                    </toc-element>
+                    <toc-element topic="Boolean-Data-Type.md"/>
+                </toc-element>
+                <toc-element topic="User-Defined-Data-Type.md"/>
+            </toc-element>
+            <toc-element topic="Reference-Data-Types.md"/>
+            <toc-element topic="Pointer-Data-Type.md"/>
+        </toc-element>
+        <toc-element topic="Type-Casting-in-C.md"/>
+        <toc-element topic="Variables-in-C.md"/>
+        <toc-element topic="Operators-in-C.md"/>
+        <toc-element topic="Control-Flow-Statements-in-C.md"/>
+        <toc-element topic="Functions-in-C.md"/>
+    </toc-element>
+</instance-profile>
