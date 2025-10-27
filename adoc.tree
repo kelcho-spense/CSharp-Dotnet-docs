@@ -36,5 +36,10 @@
         <toc-element topic="Operators-in-C.md"/>
         <toc-element topic="Control-Flow-Statements-in-C.md"/>
         <toc-element topic="Functions-in-C.md"/>
+        <toc-element topic="Object-Oriented-Programing.md">
+            <toc-element topic="Class-Objects.md"/>
+            <toc-element topic="Constructors-in-C.md"/>
+            <toc-element topic="Access-Specifiers.md"/>
+        </toc-element>
     </toc-element>
 </instance-profile>
