@@ -62,4 +62,13 @@
         <description>Created after removal of "String Data Type" from API Docs</description>
         <accepts>String-Data-Type-in-C.html</accepts>
     </rule>
+    <rule id="e78bbc9">
+        <description>Created after removal of "Operator Overloading" from API Docs</description>
+        <accepts>Operator-Overloading.html</accepts>
+    </rule>
+    <rule id="3657e56c">
+        <description>Created after removal of "Events, Delegates, and Lambda Expression in C#:" from API Docs
+        </description>
+        <accepts>Events-Delegates-and-Lambda-Expression-in-C.html</accepts>
+    </rule>
 </rules>

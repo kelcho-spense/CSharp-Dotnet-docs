@@ -6,40 +6,80 @@
                  name="API Docs"
                  start-page="Introduction & Environment Setup.md">
 
-    <toc-element topic="SQL-Server.md"/>
-    <toc-element topic="Introduction & Environment Setup.md">
-        <toc-element topic="Introduction to C# Programming Language.md"/>
-        <toc-element topic="How to Download and Install Visual Studio on Windows.md"/>
-        <toc-element topic="Creating-First-Console-Application-using-Visual-Studio.md"/>
-    </toc-element>
-    <toc-element topic="C-NET-Basics.md">
-        <toc-element topic="Methods-and-Properties-of-Console-Class-in-C.md"/>
-        <toc-element topic="Var-Keyword-in-C.md"/>
-        <toc-element topic="Const-Keyword-in-C.md"/>
-        <toc-element topic="Data-Types-in-C.md">
-            <toc-element topic="Value-Data-Types-in-C.md">
-                <toc-element topic="Predefined-Data-types.md">
-                    <toc-element topic="Numeric-Numbers-with-Decimal-Single-Double-Decimal.md"/>
-                    <toc-element topic="Integers-Data-types.md"/>
-                    <toc-element topic="char-data-type-in-C.md"/>
-                    <toc-element topic="Byte-Data-Type-in-C.md">
-                    </toc-element>
-                    <toc-element topic="Boolean-Data-Type.md"/>
-                </toc-element>
-                <toc-element topic="User-Defined-Data-Type.md"/>
-            </toc-element>
-            <toc-element topic="Reference-Data-Types.md"/>
-            <toc-element topic="Pointer-Data-Type.md"/>
+    <toc-element topic="C.md">
+        <toc-element topic="Introduction &amp; Environment Setup.md">
+            <toc-element topic="Introduction to C# Programming Language.md"/>
+            <toc-element topic="How to Download and Install Visual Studio on Windows.md"/>
+            <toc-element topic="Creating-First-Console-Application-using-Visual-Studio.md"/>
         </toc-element>
-        <toc-element topic="Type-Casting-in-C.md"/>
-        <toc-element topic="Variables-in-C.md"/>
-        <toc-element topic="Operators-in-C.md"/>
-        <toc-element topic="Control-Flow-Statements-in-C.md"/>
-        <toc-element topic="Functions-in-C.md"/>
+        <toc-element topic="C-NET-Basics.md">
+            <toc-element topic="Methods-and-Properties-of-Console-Class-in-C.md"/>
+            <toc-element topic="Var-Keyword-in-C.md"/>
+            <toc-element topic="Const-Keyword-in-C.md"/>
+            <toc-element topic="Data-Types-in-C.md">
+                <toc-element topic="Value-Data-Types-in-C.md">
+                    <toc-element topic="Predefined-Data-types.md">
+                        <toc-element topic="Numeric-Numbers-with-Decimal-Single-Double-Decimal.md"/>
+                        <toc-element topic="Integers-Data-types.md"/>
+                        <toc-element topic="char-data-type-in-C.md"/>
+                        <toc-element topic="Byte-Data-Type-in-C.md"/>
+                        <toc-element topic="Boolean-Data-Type.md"/>
+                    </toc-element>
+                    <toc-element topic="User-Defined-Data-Type.md"/>
+                </toc-element>
+                <toc-element topic="Reference-Data-Types.md"/>
+                <toc-element topic="Pointer-Data-Type.md"/>
+            </toc-element>
+            <toc-element topic="Type-Casting-in-C.md"/>
+            <toc-element topic="Variables-in-C.md"/>
+            <toc-element topic="Operators-in-C.md"/>
+            <toc-element topic="Control-Flow-Statements-in-C.md"/>
+            <toc-element topic="Functions-in-C.md"/>
+        </toc-element>
         <toc-element topic="Object-Oriented-Programing.md">
             <toc-element topic="Class-Objects.md"/>
             <toc-element topic="Constructors-in-C.md"/>
             <toc-element topic="Access-Specifiers.md"/>
+            <toc-element topic="OOP-Pillars-Encapsulation.md"/>
+            <toc-element topic="OOP-Pillars-Inheritance.md"/>
+            <toc-element topic="OOP-Pillars-Abstraction.md"/>
+            <toc-element topic="Application-Development-Process.md"/>
+            <toc-element topic="Interface-in-C.md"/>
+            <toc-element topic="OOP-Principles-Polymorphism.md">
+                <toc-element topic="Method-Overloading.md"/>
+                <toc-element topic="Method-Overriding.md"/>
+                <toc-element topic="Method-Hiding.md"/>
+            </toc-element>
+            <toc-element topic="OOP-Real-Time-Examples.md"/>
+            <toc-element topic="OOP-Real-Time-Exercise-Schenarios.md"/>
         </toc-element>
+        <toc-element topic="Exception-Handling.md">
+            <toc-element topic="Custom-Exceptions.md"/>
+        </toc-element>
+        <toc-element topic="Collections-in-C.md">
+            <toc-element topic="Array.md"/>
+            <toc-element topic="ArrayList.md"/>
+            <toc-element topic="Hashtable.md"/>
+        </toc-element>
+        <toc-element topic="Generic-Collections.md">
+            <toc-element topic="List-T.md"/>
+            <toc-element topic="HashSet-T.md"/>
+            <toc-element topic="SortedSet-T.md"/>
+            <toc-element topic="Stack-T.md"/>
+        </toc-element>
+        <toc-element topic="File-Handling.md">
+            <toc-element topic="FileStream-Class.md"/>
+            <toc-element topic="StreamReader-StreamWriter.md"/>
+            <toc-element topic="File-Class.md"/>
+            <toc-element topic="FileInfo-Class.md"/>
+            <toc-element topic="DirectoryInfor-Class.md"/>
+        </toc-element>
+        <toc-element topic="Asynchronous-Programming.md"/>
+        <toc-element topic="AutoMapper.md"/>
+        <toc-element topic="Lambda-Expressions.md"/>
+        <toc-element topic="LINQ.md"/>
     </toc-element>
+    <toc-element topic="Entity-Framework.md"/>
+    <toc-element topic="ASP-NET-Web-API.md"/>
+    <toc-element topic="SQL-Server.md"/>
 </instance-profile>

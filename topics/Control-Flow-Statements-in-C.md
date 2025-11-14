@@ -48,6 +48,7 @@ It executes a block of statements (one or more instructions) when the condition 
 ![image_46.png](image_46.png)
 
 **Flow Chart of If Block:**
+
 ![image_47.png](image_47.png)
 
 Here, the block of statements executes only when the condition is true. And if the condition is false, then it will skip the execution of the statements.
@@ -101,6 +102,7 @@ The If-Else block in C# Language is used to provide some optional information wh
 ![image_48.png](image_48.png)
 
 **Flow Chart of If-Else Block:**
+
 ![image_49.png](image_49.png)
 
 > In C# Programming Language, if and else are reserved words. That means you cannot use these two keywords for the naming of any variables, properties, class, methods, etc. The expressions or conditions specified in the if block can be a Relational or Boolean expression or condition that evaluates to TRUE or FALSE. Now let us see some examples to understand the if-else conditional statements
@@ -629,6 +631,7 @@ Writing a while loop inside another while loop is called nested while loop or yo
 ![image_59.png](image_59.png)
 
 **Example to Print the Following Format using Nested While Loop in C# Language**
+
 ![image_60.png](image_60.png)
 
 ```C#
