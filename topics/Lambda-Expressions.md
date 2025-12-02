@@ -27,9 +27,9 @@ A lambda expression is a **short, inline anonymous function** you write with the
 
 | Part             | Description                                                                                                                            |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Input parameters | On the left of `=>`. If only one parameter you can omit parentheses. ([Microsoft Learn][1])                                            |
+| Input parameters | On the left of `=>`. If only one parameter you can omit parentheses.                                             |
 | `=>` operator    | Separates parameters and body.                                                                                                         |
-| Body             | Right side: either a single expression (expression lambda) or a block `{ … }` of statements (statement lambda). ([Microsoft Learn][1]) |
+| Body             | Right side: either a single expression (expression lambda) or a block `{ … }` of statements (statement lambda).  |
 
 **Key tip**: Use expression lambdas when you have a simple return value; use statement lambdas when you need multiple lines (e.g., logging + calculation).
 Example statement lambda:

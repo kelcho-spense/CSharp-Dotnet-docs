@@ -77,7 +77,11 @@
         <toc-element topic="Asynchronous-Programming.md"/>
         <toc-element topic="AutoMapper.md"/>
         <toc-element topic="Lambda-Expressions.md"/>
-        <toc-element topic="LINQ.md"/>
+        <toc-element topic="LINQ.md">
+            <toc-element topic="IEnumerable-and-IQueryable-in-C.md"/>
+            <toc-element topic="Empty-MD-Topic.md"/>
+            <toc-element topic="IQueryable-Workshop.md"/>
+        </toc-element>
     </toc-element>
     <toc-element topic="Entity-Framework.md"/>
     <toc-element topic="ASP-NET-Web-API.md"/>
