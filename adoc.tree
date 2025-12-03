@@ -83,7 +83,26 @@
             <toc-element topic="IQueryable-Workshop.md"/>
         </toc-element>
     </toc-element>
-    <toc-element topic="Entity-Framework.md"/>
+    <toc-element topic="Entity-Framework.md">
+        <toc-element topic="Entity-Framework-Architecture.md"/>
+        <toc-element topic="DbContext-in-EF.md"/>
+        <toc-element topic="Entities-in-Entity-Framework.md"/>
+        <toc-element topic="Entity-States-in-Entity-Framework.md"/>
+        <toc-element topic="Development-Approach-with-Entity-Framework.md">
+            <toc-element topic="Entity-Framework-Code-First-Approach.md">
+                <toc-element topic="Default-Code-First-Conventions-in-Entity-Framework.md"/>
+                <toc-element topic="Configure-Domain-Classes-in-Entity-Framework.md"/>
+                <toc-element topic="Data-Annotation-Attributes-in-Entity-Framework-Code-First.md"/>
+                <toc-element topic="Table-Data-Annotation-Attribute-in-Entity-Framework.md"/>
+                <toc-element topic="Column-Data-Annotation-Attribute-in-Entity-Framework.md"/>
+                <toc-element topic="Key-Attribute-in-Entity-Framework.md"/>
+                <toc-element topic="ForeignKey-Attribute-in-Entity-Framework.md"/>
+                <toc-element topic="Index-Attribute-in-Entity-Framework.md"/>
+                <toc-element topic="Relationships-in-EF.md"/>
+                <toc-element topic="EF-Core-CLI-Database-Commands.md"/>
+            </toc-element>
+        </toc-element>
+    </toc-element>
     <toc-element topic="ASP-NET-Web-API.md"/>
     <toc-element topic="SQL-Server.md"/>
 </instance-profile>
