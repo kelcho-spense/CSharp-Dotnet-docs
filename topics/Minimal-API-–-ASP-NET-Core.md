@@ -1,0 +1,3 @@
+# Minimal API – ASP.NET Core
+
+Start typing here...
