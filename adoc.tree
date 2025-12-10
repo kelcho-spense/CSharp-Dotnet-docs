@@ -109,6 +109,14 @@
         <toc-element topic="Core-Basics.md"/>
         <toc-element topic="ASP-NET-Web-API.md">
             <toc-element topic="Basics.md"/>
+            <toc-element topic="ASP-NET-Core-Web-API-–-Basics.md">
+            </toc-element>
+            <toc-element topic="Controllers-in-ASP-NET-Core-Web-API.md"/>
+            <toc-element topic="Models-in-ASP-NET-Core-Web-API.md"/>
+            <toc-element topic="Controllers-Models-Workshop-CRUD-without-dbs.md"/>
+            <toc-element topic="Services-in-ASP-NET-Core-Web-API.md"/>
+            <toc-element topic="Dependency-Injection-in-ASP-NET-Core-Web-API.md"/>
+            <toc-element topic="DI-Singleton-vs-Scoped-vs-Transient-in-ASP-NET-Core-Web-API.md"/>
             <toc-element topic="Routing.md"/>
             <toc-element topic="Return-Types-and-Status-Codes.md"/>
             <toc-element topic="Model-Binding.md"/>
