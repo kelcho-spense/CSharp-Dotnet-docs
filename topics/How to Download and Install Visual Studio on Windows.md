@@ -1,5 +1,6 @@
 # How to Download and Install Visual Studio on Windows
 
+![image_284.png](image_284.png)
 
 ## What is Visual Studio?
 Microsoft Visual Studio is an Integrated Development Environment (IDE) from Microsoft. Visual Studio is a comprehensive tool for developing applications on the .NET platform. It’s the go-to resource for all your programming needs. One can develop, debug and run applications using Visual Studio.

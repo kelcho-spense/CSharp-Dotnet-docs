@@ -1,5 +1,7 @@
 # Object-Oriented Programing
 
+![image_286.png](image_286.png)
+
 In this article, I will give an overview of Object-Oriented Programming (OOPs) in C#, i.e., discuss the OOPs Principles in C#. Object-Oriented Programming, commonly known as OOPs, is a technique, not a technology. It means it doesn’t provide any syntaxes or APIs; instead, it provides suggestions to design and develop objects in programming languages. As part of this article, we will cover the following OOP concepts in C#.
 
 ## How do we Develop Applications?

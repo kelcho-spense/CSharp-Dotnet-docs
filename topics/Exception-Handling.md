@@ -1,5 +1,7 @@
 # Exception Handling
 
+![image_287.png](image_287.png)
+
 This is one of the most important concepts in C#. As a developer, handling an exception is your key responsibility while developing an application. Exception Handling is a procedure for handling an exception that occurs during the execution of a program. As part of this article, we will discuss the following pointers in detail.
 
 ## Types of Errors in C#

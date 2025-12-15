@@ -1,5 +1,7 @@
 # Introduction to C# Programming Language
 
+![image_283.png](image_283.png)
+
 ## Why did C#.NET come to the market?
 
 C#.NET Programming Language is mainly designed to overcome the disadvantages of C and C++ and to develop internet applications (web applications) by achieving platform independence.

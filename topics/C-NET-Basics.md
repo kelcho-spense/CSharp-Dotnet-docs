@@ -1,5 +1,7 @@
 # C#.NET Basics
 
+![image_285.png](image_285.png)
+
 ## Basic Structure of C# Program
 Now, let’s understand the Basic Structure of the C# Program using a Console Application.
 

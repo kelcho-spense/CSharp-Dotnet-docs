@@ -4,7 +4,7 @@
 
 <instance-profile id="adoc"
                  name="API Docs"
-                 start-page="Introduction & Environment Setup.md">
+                 start-page="Introduction &amp; Environment Setup.md">
 
     <toc-element topic="C.md">
         <toc-element topic="Introduction &amp; Environment Setup.md">
@@ -27,7 +27,7 @@
                     </toc-element>
                     <toc-element topic="User-Defined-Data-Type.md"/>
                 </toc-element>
-                <toc-element topic="Reference-Data-Types.md"/>
+                <toc-element topic="Reference-Data-Types.topic"/>
                 <toc-element topic="Pointer-Data-Type.md"/>
             </toc-element>
             <toc-element topic="Type-Casting-in-C.md"/>

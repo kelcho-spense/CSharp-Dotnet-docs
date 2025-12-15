@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       id="Reference-Data-Types" title="Reference Data Types">
+
+    <title>
+        Reference Data Types
+    </title>
+    <img src="image_31.png" alt="image_31.png"/>
+    <chapter id="reference-data-types-in-c">
+        <title>
+            <control>Reference Data Types in C#</control>
+        </title>
+        <p>In C#,
+            <control>reference data types</control>
+            are types that store references (or pointers) to the actual data rather than the data itself. When you
+            assign a reference type variable to another variable, they both point to the same memory location, meaning
+            they share the same data.
+        </p>
+        <p>Reference types are stored in the
+            <control>heap</control>
+            memory, and variables of reference types hold the memory address (reference) of where the data is stored,
+            not the actual data. This is different from
+            <control>value types</control>
+            (like <code>int</code>, <code>float</code>, etc.), which store the actual data in memory.
+        </p>
+    </chapter>
+    <chapter id="types-of-reference-data-types-in-c">
+        <title>
+            <control>Types of Reference Data Types in C#</control>
+        </title>
+        <list type="decimal">
+            <li>
+                <p>
+                    <control>Objects</control>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <control>Strings</control>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <control>Classes</control>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <control>Interfaces</control>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <control>Arrays</control>
+                </p>
+            </li>
+        </list>
+        <hr/>
+    </chapter>
+    <chapter id="1-objects-in-c">
+        <title>
+            <control>1. Objects in C#</control>
+        </title>
+        <list>
+            <li>
+                <p>
+                    <control>Object</control>
+                    is the base type for all data types in C#. Every type, whether it’s a built-in type or user-defined
+                    class, is derived from <code>System.Object</code>.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <control>Object</control>
+                    can store any data type, including value types and reference types.
+                </p>
+            </li>
+        </list>
+        <chapter id="example_1">
+            <title>
+                <control>Example:</control>
+            </title>
+
+            <code-block lang="C#">
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Storing a value type in an object
+        int number = 10;
+        object obj = number;  // Boxing: value type stored in object
+
+        // Storing a reference type in an object
+        string message = &quot;Hello, C#!&quot;;
+        obj = message;  // obj now holds a reference to the string
+
+        Console.WriteLine(obj);  // Output: Hello, C#!
+    }
+}
+</code-block>
+            <p>
+                <control>Explanation:</control>
+            </p>
+            <list>
+                <li><p>The <code>obj</code> variable can hold any type of data (here, an <code>int</code> and a <code>string</code>).
+                    It’s a generic reference type that can store any object, but it requires casting to work with the
+                    original type.</p></li>
+            </list>
+            <hr/>
+        </chapter>
+    </chapter>
+    <chapter id="2-strings-in-c">
+        <title>
+            <control>2. Strings in C#</control>
+        </title>
+        <p>Strings in C# are reference types. They are immutable, which means once a string is created, it cannot be
+            changed. Any operation that modifies a string will result in the creation of a new string.</p>
+        <chapter id="example_2">
+            <title>
+                <control>Example:</control>
+            </title>
+
+            <code-block lang="C#">
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string str1 = &quot;Hello&quot;;
+        string str2 = str1;
+
+        str1 = &quot;Goodbye&quot;;  // Reassigning str1
+
+        Console.WriteLine(str1);  // Output: Goodbye
+        Console.WriteLine(str2);  // Output: Hello
+    }
+}
+</code-block>
+            <p>
+                <control>Explanation:</control>
+            </p>
+            <list>
+                <li><p>Even though <code>str2</code> was assigned <code>str1</code>, changing <code>str1</code> does not
+                    affect <code>str2</code>. This is because strings are immutable, and <code>str2</code> holds a
+                    reference to the original string <code>&quot;Hello&quot;</code>, while <code>str1</code> now points
+                    to a new string <code>&quot;Goodbye&quot;</code>.</p></li>
+            </list>
+            <p>In the previous Chapter, we discussed the <code>char data</code> type where we are storing a single
+                character in it. Now, if I try to add multiple characters to a char data type, then I will get a compile
+                time error as shown in the below image.</p>
+            <img src="image_33.png" alt="image_33.png"/>
+            <p>As you can see, here we are getting the error Too many characters in character literal. This means you
+                cannot store multiple characters in the character literal. If you want to store multiple characters,
+                then you need to use the string data type in C# as shown in the below example,</p>
+
+            <code-block lang="C#">
+string str = &quot;ABC&quot;;
+
+Console.WriteLine(str);
+
+Console.WriteLine($&quot;The type of str is : {typeof(string)}&quot;);
+
+Console.ReadKey();
+</code-block>
+            <p>output</p>
+
+            <code-block lang="Plain Text">
+ABC
+The type of str is : System.String
+</code-block>
+            <hr/>
+        </chapter>
+    </chapter>
+    <chapter id="3-classes-in-c">
+        <title>
+            <control>3. Classes in C#</control>
+        </title>
+        <p>A
+            <control>class</control>
+            is a reference type that defines the structure of objects. When you create an instance of a class, the
+            object is stored in the heap, and the variable holds a reference to that object.
+        </p>
+        <chapter id="example_3">
+            <title>
+                <control>Example:</control>
+            </title>
+
+            <code-block lang="C#">
+using System;
+
+class Person
+{
+    public string Name;
+    public int Age;
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Creating an instance of the Person class
+        Person person1 = new Person();
+        person1.Name = &quot;Alice&quot;;
+        person1.Age = 25;
+
+        // Assigning reference of person1 to person2
+        Person person2 = person1;
+
+        // Modifying the object through person2
+        person2.Name = &quot;Bob&quot;;
+
+        // Both person1 and person2 refer to the same object
+        Console.WriteLine(person1.Name);  // Output: Bob
+        Console.WriteLine(person2.Name);  // Output: Bob
+    }
+}
+</code-block>
+            <p>
+                <control>Explanation:</control>
+            </p>
+            <list>
+                <li><p><code>person1</code> and <code>person2</code> both refer to the same object in memory. Modifying
+                    the object through <code>person2</code> also affects <code>person1</code>, as they both point to the
+                    same memory location.</p></li>
+            </list>
+            <hr/>
+        </chapter>
+    </chapter>
+    <chapter id="4-interfaces-in-c">
+        <title>
+            <control>4. Interfaces in C#</control>
+        </title>
+        <p>An
+            <control>interface</control>
+            defines a contract that classes can implement. It is a reference type that specifies a set of methods or
+            properties that a class must implement.
+        </p>
+        <chapter id="example_4">
+            <title>
+                <control>Example:</control>
+            </title>
+
+            <code-block lang="C#">
+using System;
+
+interface IDriveable
+{
+    void Drive();
+}
+
+class Car : IDriveable
+{
+    public void Drive()
+    {
+        Console.WriteLine(&quot;The car is driving.&quot;);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        IDriveable myCar = new Car();
+        myCar.Drive();  // Output: The car is driving.
+    }
+}
+</code-block>
+            <p>
+                <control>Explanation:</control>
+            </p>
+            <list>
+                <li><p>The <code>Car</code> class implements the <code>IDriveable</code> interface, meaning it must
+                    provide an implementation for the <code>Drive</code> method. The <code>myCar</code> variable holds a
+                    reference to a <code>Car</code> object, and calling <code>Drive</code> on it triggers the <code>Drive</code>
+                    method of the <code>Car</code> class.</p></li>
+            </list>
+            <hr/>
+        </chapter>
+    </chapter>
+    <chapter id="5-arrays-in-c">
+        <title>
+            <control>5. Arrays in C#</control>
+        </title>
+        <p>Arrays in C# are also reference types. They store multiple elements of the same type and are allocated on the
+            heap. When you assign an array to another variable, both variables point to the same array in memory.</p>
+        <chapter id="example">
+            <title>
+                <control>Example:</control>
+            </title>
+
+            <code-block lang="C#">
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] arr1 = { 1, 2, 3, 4 };
+        int[] arr2 = arr1;  // arr2 points to the same array as arr1
+
+        arr2[0] = 10;  // Modify the first element of the array
+
+        Console.WriteLine(arr1[0]);  // Output: 10 (arr1 and arr2 are pointing to the same array)
+        Console.WriteLine(arr2[0]);  // Output: 10
+    }
+}
+</code-block>
+            <p>
+                <control>Explanation:</control>
+            </p>
+            <list>
+                <li><p>Both <code>arr1</code> and <code>arr2</code> reference the same array. Changing an element in
+                    <code>arr2</code> also changes it in <code>arr1</code> because they both point to the same memory
+                    location.</p></li>
+            </list>
+            <hr/>
+        </chapter>
+    </chapter>
+    <chapter id="summary-of-reference-data-types">
+        <title>
+            <control>Summary of Reference Data Types</control>
+        </title>
+        <table>
+            <tr>
+                <td>Type</td>
+                <td>Memory Location</td>
+                <td>Example Usage</td>
+            </tr>
+            <tr>
+                <td>
+                    <control>Object</control>
+                </td>
+                <td>Heap</td>
+                <td>Can store any data type (e.g., <code>int</code>, <code>string</code>, etc.)</td>
+            </tr>
+            <tr>
+                <td>
+                    <control>String</control>
+                </td>
+                <td>Heap</td>
+                <td>Represents a sequence of characters, immutable</td>
+            </tr>
+            <tr>
+                <td>
+                    <control>Class</control>
+                </td>
+                <td>Heap</td>
+                <td>Defines objects with data and behavior</td>
+            </tr>
+            <tr>
+                <td>
+                    <control>Interface</control>
+                </td>
+                <td>Heap</td>
+                <td>Defines a contract that classes can implement</td>
+            </tr>
+            <tr>
+                <td>
+                    <control>Array</control>
+                </td>
+                <td>Heap</td>
+                <td>A collection of elements of the same type</td>
+            </tr>
+        </table>
+    </chapter>
+    <chapter id="key-points">
+        <title>
+            <control>Key Points:</control>
+        </title>
+        <tip>
+            <list>
+                <li>
+                    <p>
+                        <control>Heap Memory</control>
+                        : Reference types are stored in heap memory, and variables hold a reference to the memory
+                        location.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <control>Shared Data</control>
+                        : Assigning one reference type variable to another makes them both reference the same object in
+                        memory.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <control>Object Types</control>
+                        : Classes, interfaces, and arrays are examples of reference types in C#.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <control>Mutability</control>
+                        : Reference types allow the data they point to be modified, and changes are reflected across all
+                        references to that object.
+                    </p>
+                </li>
+            </list>
+        </tip>
+        <hr/>
+    </chapter>
+
+</topic>

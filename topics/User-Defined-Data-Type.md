@@ -19,7 +19,7 @@ Enums are ideal for use cases where you need to define a collection of options o
 
 An enum is declared using the `enum` keyword followed by the name of the enum and the list of constant values it will hold. By default, the underlying type of the enum is `int`, but you can specify other integral types such as `byte`, `short`, `long`, etc.
 
-### **Syntax:**
+### **Syntax:** {id="syntax_1"}
 
 ```C#
 enum EnumName : EnumType
