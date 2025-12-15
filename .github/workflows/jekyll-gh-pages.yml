@@ -1,0 +1,67 @@
+name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["master"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Identify .zip file
+        id: zipfile
+        run: |
+          ZIP_FILE=$(ls ./*.zip | head -n 1)  # Assuming there is one .zip file
+          echo "ZIP_FILE=${ZIP_FILE}" >> $GITHUB_ENV
+
+      - name: Remove existing directory
+        run: |
+          DIR_NAME=$(basename ${{ env.ZIP_FILE }} .zip)
+          echo "Removing existing directory: ./${DIR_NAME}"
+          rm -rf ./${DIR_NAME}  # Assuming files are extracted to root directory, remove the existing one
+
+      - name: Unzip the new file
+        run: |
+          echo "Unzipping ${ZIP_FILE} into root directory"
+          unzip -o "${ZIP_FILE}" -d "./"  # Unzip directly into the root directory
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./  # Use root directory as source
+          destination: ./_site
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
