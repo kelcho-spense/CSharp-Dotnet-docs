@@ -1,3 +1,4 @@
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
@@ -8,11 +9,14 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -25,22 +29,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Identify .zip file
-        id: zipfile
-        run: |
-          ZIP_FILE=$(ls ./*.zip | head -n 1)  # Assuming there is one .zip file
-          echo "ZIP_FILE=${ZIP_FILE}" >> $GITHUB_ENV
+      - name: Remove existing webHelpR2-all directory
+        run: rm -rf ./webHelpADOC2-all
 
-      - name: Remove existing directory
-        run: |
-          DIR_NAME=$(basename ${{ env.ZIP_FILE }} .zip)
-          echo "Removing existing directory: ./${DIR_NAME}"
-          rm -rf ./${DIR_NAME}  # Assuming files are extracted to root directory, remove the existing one
-
-      - name: Unzip the new file
-        run: |
-          echo "Unzipping ${ZIP_FILE} into root directory"
-          unzip -o "${ZIP_FILE}" -d "./"  # Unzip directly into the root directory
+      - name: Unzip webHelpR2-all.zip
+        run: unzip -o ./webHelpADOC2-all -d webHelpADOC2-all
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -48,7 +41,7 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./  # Use root directory as source
+          source: ./webHelpADOC2-all
           destination: ./_site
 
       - name: Upload artifact
