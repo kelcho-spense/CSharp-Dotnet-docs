@@ -28,19 +28,19 @@ jobs:
       - name: Identify .zip file
         id: zipfile
         run: |
-          ZIP_FILE=$(ls ./Writerside/*.zip | head -n 1)  # Assuming there is one .zip file
+          ZIP_FILE=$(ls ./*.zip | head -n 1)  # Assuming there is one .zip file
           echo "ZIP_FILE=${ZIP_FILE}" >> $GITHUB_ENV
 
       - name: Remove existing directory
         run: |
           DIR_NAME=$(basename ${{ env.ZIP_FILE }} .zip)
-          echo "Removing existing directory: ./Writerside/${DIR_NAME}"
+          echo "Removing existing directory: ./${DIR_NAME}"
           rm -rf ./Writerside/${DIR_NAME}
 
       - name: Unzip the new file
         run: |
-          echo "Unzipping ${ZIP_FILE} into Writerside"
-          unzip -o "${ZIP_FILE}" -d "./Writerside"
+          echo "Unzipping ${ZIP_FILE} into rootDIR"
+          unzip -o "${ZIP_FILE}" -d "./"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -48,7 +48,7 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./Writerside
+          source: ./
           destination: ./_site
 
       - name: Upload artifact
