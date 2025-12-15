@@ -35,12 +35,12 @@ jobs:
         run: |
           DIR_NAME=$(basename ${{ env.ZIP_FILE }} .zip)
           echo "Removing existing directory: ./${DIR_NAME}"
-          rm -rf ./Writerside/${DIR_NAME}
+          rm -rf ./${DIR_NAME}  # Assuming files are extracted to root directory, remove the existing one
 
       - name: Unzip the new file
         run: |
-          echo "Unzipping ${ZIP_FILE} into rootDIR"
-          unzip -o "${ZIP_FILE}" -d "./"
+          echo "Unzipping ${ZIP_FILE} into root directory"
+          unzip -o "${ZIP_FILE}" -d "./"  # Unzip directly into the root directory
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -48,7 +48,7 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./
+          source: ./  # Use root directory as source
           destination: ./_site
 
       - name: Upload artifact
