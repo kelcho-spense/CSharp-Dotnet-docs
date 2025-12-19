@@ -26,7 +26,7 @@ The Entity Framework API will create `a primary key column for the property name
 
 ![image_229.png](image_229.png)
 
-> If both Id and <Entity Class Name> + “Id” properties are present in a single model class then it will create the Primary key based on the Id column only
+> If both Id and `<Entity Class Name>` + “Id” properties are present in a single model class then it will create the Primary key based on the Id column only
 
 ### Foreign Key Column Name:
 

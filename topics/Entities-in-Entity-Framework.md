@@ -9,7 +9,7 @@ At the end of this article, you will understand the following pointers in detail
 
 ![image_218.png](image_218.png)
 
-As you can see in the above image, Departments property type is DbSet<Department> and Employees property type is DbSet<Employee>. So, here, Department and Employee are nothing but entities. An Entity in Entity Framework is a class that is included as a `DbSet<TEntity>` type property in the derived context class.
+As you can see in the above image, Departments property type is `DbSet<Department>` and Employees property type is `DbSet<Employee>`. So, here, Department and Employee are nothing but entities. An Entity in Entity Framework is a class that is included as a `DbSet<TEntity>` type property in the derived context class.
 
 Entity Framework maps each entity to a database table and each property of an entity is mapped to a column in the database table. In our example, the Department entity is mapped with the Departments database table and the Employee entity is mapped with the Employees database table.
 

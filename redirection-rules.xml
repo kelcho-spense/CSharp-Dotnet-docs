@@ -71,4 +71,20 @@
         </description>
         <accepts>Events-Delegates-and-Lambda-Expression-in-C.html</accepts>
     </rule>
+    <rule id="5d7f3409">
+        <description>Created after removal of "Core Basics" from API Docs</description>
+        <accepts>Core-Basics.html</accepts>
+    </rule>
+    <rule id="4c4c185e">
+        <description>Created after removal of "Return Types and Status Codes" from API Docs</description>
+        <accepts>Return-Types-and-Status-Codes.html</accepts>
+    </rule>
+    <rule id="64cb9661">
+        <description>Created after removal of "Automapper in ASP.NET Core Web API" from API Docs</description>
+        <accepts>Automapper-in-ASP-NET.html</accepts>
+    </rule>
+    <rule id="1f1a4047">
+        <description>Created after removal of "HTTP Methods in ASP.NET Core Web API" from API Docs</description>
+        <accepts>HTTP-Methods-in-ASP-NET-Core-Web-API.html</accepts>
+    </rule>
 </rules>
