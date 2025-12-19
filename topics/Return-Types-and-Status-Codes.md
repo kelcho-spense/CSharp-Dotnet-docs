@@ -1,3 +1,0 @@
-# Return Types and Status Codes
-
-Start typing here...

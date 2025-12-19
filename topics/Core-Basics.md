@@ -1,3 +1,0 @@
-# Core Basics
-
-Start typing here...

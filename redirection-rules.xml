@@ -71,4 +71,12 @@
         </description>
         <accepts>Events-Delegates-and-Lambda-Expression-in-C.html</accepts>
     </rule>
+    <rule id="5d7f3409">
+        <description>Created after removal of "Core Basics" from API Docs</description>
+        <accepts>Core-Basics.html</accepts>
+    </rule>
+    <rule id="4c4c185e">
+        <description>Created after removal of "Return Types and Status Codes" from API Docs</description>
+        <accepts>Return-Types-and-Status-Codes.html</accepts>
+    </rule>
 </rules>

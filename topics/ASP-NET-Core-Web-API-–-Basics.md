@@ -2,7 +2,8 @@
 
 ## Default ASP.NET Core Web API Files and Folders
 
-When you create a new ASP.NET Core Web API project in Visual Studio 2022 0r 2026 with .NET 10.0, a predefined set of files and folders is automatically generated. This structure serves as the foundation of the application, ensuring developers have a well-organized starting point.
+When you create a new ASP.NET Core Web API project in Visual Studio 2022 0r 2026 with .NET 10.0, 
+a predefined set of files and folders is automatically generated. This structure serves as the foundation of the application, ensuring developers have a well-organized starting point.
 
 ![image_251.png](image_251.png)
 
