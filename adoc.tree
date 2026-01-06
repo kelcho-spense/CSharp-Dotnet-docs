@@ -132,7 +132,9 @@
                 <toc-element topic="Redis-Cache-in-ASP-NET-Core-Web-API.md"/>
             </toc-element>
             <toc-element topic="Stored-Procedures-in-EFCore.md"/>
-            <toc-element topic="Fluent-Validations-–-ASP-NET-Core-Web-API.md"/>
+            <toc-element topic="Fluent-Validations-–-ASP-NET-Core-Web-API.md">
+                <toc-element topic="Workshop-Fluent-validation-with-manual-validation.md"/>
+            </toc-element>
             <toc-element topic="Filters-–-ASP-NET-Core-Web-API.md"/>
             <toc-element topic="Security-–-ASP-NET-Core-Web-API.md"/>
             <toc-element topic="JWT-–-ASP-NET-Core-Web-API.md"/>
