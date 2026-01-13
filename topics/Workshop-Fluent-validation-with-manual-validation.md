@@ -779,4 +779,5 @@ When to Use Which Approach
 * Use **Data Annotations** for simple scenarios where validation rules are straightforward. There is no need to reuse them across different models. They are easy to implement and understand.
 * Use **Fluent API** Validation for complex, reusable, or dynamic validation scenarios where separating the validation logic from the model helps maintain cleaner code. It’s also ideal when the same validation logic is needed across multiple models.
 
+
 > Note: The FluentValidation.AspNetCore package is no longer maintained. Microsoft recommends to use the core FluentValidation package and adopting a manual validation approach.
